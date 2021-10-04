@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/index.css">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Crud - Sqlite cordova</title>
+    </head>
+    <body>
+        <div>
+           <span>Usuário</span><br/>
+           <input type="text" id="txtusuario"></input><br/><br/>
+           <span>Senha</span><br/>
+           <input type="text" id="txtsenha"></input><br/><br/>
+           <input type="button" id="insert" value="Inserir"></input><br/><br/>
+           <input type="button" id="listen" value="Listar"></input>
+       </div>
 
-    <title> Login </title>
-</head>
-<body>
-    <div class="login">
-        <h1>Login</h1>
-        <input type="text" placeholder="Úsuario">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
-    </div>
-</body>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
